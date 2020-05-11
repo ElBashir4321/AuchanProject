@@ -1,0 +1,156 @@
+<link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="register.component.css" rel="stylesheet" media="all">
+<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+  <div class="wrapper wrapper--w680">
+      <div class="card card-4">
+          <div class="card-body">
+              <h2 class="title">Inscription</h2>
+              <form method="POST">
+                  <div class="row row-space">
+                      <div class="col-2">
+                          <div class="input-group">
+                              <label class="label">Nom d'utilisateur</label>
+                              <input class="input--style-4" type="text" name="first_name">
+                          </div>
+                      </div>
+                      <div class="col-2">
+                          <div class="input-group">
+                              <label class="label">Mot de passe</label>
+                              <input class="input--style-4" type="text" name="last_name">
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="row row-space">
+                      <div class="col-2">
+                          <div class="input-group">
+                              <label class="label">Email</label>
+                              <input class="input--style-4" type="email" name="email">
+                          </div>
+                      </div>
+                      <div class="col-2">
+                          <div class="input-group">
+                              <label class="label">Confirmer le mot de passe</label>
+                              <input class="input--style-4" type="text" name="phone">
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row row-space">
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="label">Carte d'identité</label>
+                            <input type="file" name="avatar"accept="image/png, image/jpeg">
+                            
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="label">Carte d'étudiant</label>
+                            <input type="file" name="avatar"accept="image/png, image/jpeg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                  <div class="col-2">
+                      <div class="input-group">
+                          <label class="label">Certificat de scolarité</label>
+                          <input type="file" name="avatar"accept="image/png, image/jpeg">
+                          
+                      </div>
+                    </div>
+                      <div class="col-2">
+                        <div class="input-group">
+                            <label class="label">Type de Cours</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                              <select name="skills" multiple="" class="ui fluid dropdown">
+                                <option value="">Skills</option>
+                              <option value="angular">Angular</option>
+                              <option value="css">CSS</option>
+                              <option value="design">Graphic Design</option>
+                              <option value="ember">Ember</option>
+                              <option value="html">HTML</option>
+                              <option value="ia">Information Architecture</option>
+                              <option value="javascript">Javascript</option>
+                              <option value="mech">Mechanical Engineering</option>
+                              <option value="meteor">Meteor</option>
+                              <option value="node">NodeJS</option>
+                              <option value="plumbing">Plumbing</option>
+                              <option value="python">Python</option>
+                              <option value="rails">Rails</option>
+                              <option value="react">React</option>
+                              <option value="repair">Kitchen Repair</option>
+                              <option value="ruby">Ruby</option>
+                              <option value="ui">UI Design</option>
+                              <option value="ux">User Experience</option>
+                              </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="row row-space">
+                  <div class="col-2">
+                  <div class="input-group">
+                      <label class="label">Niveau (x)</label>
+                      <div class="rs-select2 js-select-simple select--no-search">
+                        <select name="skills" multiple="" class="ui fluid dropdown">
+                        <option value="primaire">Primaire</option>
+                        <option value="six">6ème</option>
+                        <option value="cinq">5ème</option>
+                        <option value="quatre">4ème</option>
+                        <option value="trois">3ème</option>
+                        <option value="deux">2nde</option>
+                        <option value="un">1ère</option>
+                        <option value="terminale">Terminale</option>
+                        </select>
+                          <div class="select-dropdown"></div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="input-group">
+                        <label class="label">Date</label>
+                        <div class="input-group-icon">
+                            <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row row-space">
+                  <div class="col-2">
+                    <div class="input-group">
+                        <label class="label">Heure</label>
+                        <input type="time" id="appt" name="appt" min="0:00" max="20:00" required>
+                    </div>
+                </div>
+                </div>
+                  <div class="p-t-15">
+                      <button class="btn btn--radius-2 btn--blue" type="submit">S'inscrire</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Jquery JS-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<!-- Vendor JS-->
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/datepicker/moment.min.js"></script>
+<script src="vendor/datepicker/daterangepicker.js"></script>
+<!-- Main JS-->
+<script src="global.js"></script>
